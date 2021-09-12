@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2번</title>
+    <style>
+        table:first-child {
+            border-top: 2px solid pink;
+            border-bottom: 2px solid pink;
+        }
+
+        table td:first-child {
+            text-align: center;
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+    <form method="post" action="index.html">
+        <table>
+            <tr>
+                <td>이름</td>
+                <td><input type="text" name="name" required> </td>
+            </tr>
+            <tr>
+                <td>아이디</td>
+                <td>
+                    <input type="text" name="id" required autofocus>
+                    <a href="#">중복확인</a>
+                </td>
+            </tr>
+            <tr>
+                <td>비밀번호</td>
+                <td><input type="password" name="pwd" required> <span style = "font-size: 10pt";>6자 이상</span></td>
+            </tr>
+            <tr>
+                <td>비밀번호 확인</td>
+                <td><input type="password" name="pwdchk"></td>
+            </tr>
+            <tr>
+                <td>비밀번호 힌트/답변</td>
+                <td>
+                    <select name="hint/answer">
+                        <option value=" ">선택하세요</option>
+                        <option value="30">졸업한 초등학교 이름은?</option>
+                        <option value="31">제일 친한 친구의 핸드폰 번호는?</option>
+                        <option value="32">아버지 성함은?</option>
+                        <option value="33">어머니 성함은?</option>
+                        <option value="34">어릴 적 내 별명은?</option>
+                        <option value="35">가장 아끼는 물건은?</option>
+                        <option value="36">좋아하는 동물은?</option>
+                        <option value="37">좋아하는 색깔은?</option>
+                        <option value="38">좋아하는 음식은?</option>
+                        </optgroup>
+                </td>
+            </tr>
+            <tr>
+                <td>답변</td>
+                <td><input type="text" name="answer"></td>
+            </tr>
+            <tr>
+                <td>메일/sns 정보 수신</td>
+                <td>
+                    <input type="radio" name="yesorno" value="yes" id="yes">
+                    <label for="yes"> 수신</label>
+                    <input type="radio" name="yesorno" value="no" id="no">
+                    <label for="no"> 수신거부</label>
+                </td>
+            </tr>
+            <tr id = "border">
+                <td>관심분야</td>
+                <td>
+                    <input type="checkbox" name="interesting" value="greenbean" id="greenbean">
+                    <label for="greenbean"> 생두</label>
+                    <input type="checkbox" name="interesting" value="coffeebeans" id="coffeebeans">
+                    <label for="coffeebeans"> 원두</label>
+                    <input type="checkbox" name="interesting" value="roasting" id="roasting">
+                    <label for="roasting"> 로스팅</label>
+                    <input type="checkbox" name="interesting" value="handdrip" id="handdrip">
+                    <label for="handdrip"> 핸드드립</label>
+                    <input type="checkbox" name="interesting" value="espresso" id="espresso">
+                    <label for="espresso"> 에스프레소</label>
+                    <input type="checkbox" name="interesting" value="establishment" id="establishment">
+                    <label for="establishment"> 창업</label>
+                </td>
+            </tr>
+            
+        </table>
+        <div style="width: 620.531px; text-align: center; margin-top:2px">
+                    <input type="submit" value="회원가입">
+                    <input type="reset" value="취소">
+        </div>
+    </form>
+</body>
+
+</html>

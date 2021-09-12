@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3번</title>
+    <style>
+        body {
+            margin:0;
+            margin-left:10px;
+        }
+        /* header */
+        #header {
+            width:100%;
+            height:140px;
+            background-color: white;
+        }
+        #login {
+            float:left;
+            width: 290px;
+            height: 100%; 
+        }
+        #login fieldset {
+            border: 3px solid black;
+        }
+        table td {
+            text-align: right;
+        }
+        table td:last-child {
+            text-align: center;
+        }
+        #logo {
+            position:relative;
+            float:right;
+            width: 200px;
+            padding-top:35px;
+            padding-right : 5px;
+        }
+        #logo > img {
+            position:absolute;
+            right : 30px;
+            top:35px;
+        }
+        /* section */
+        #section {
+            width:100%;
+            height:500px;
+        }
+        #nav {
+            float:left;
+            width: 15%;
+            height: 100%; 
+            background-color: #ccc;
+        }
+        ul {
+            list-style-type: none;
+            padding-left: 0;
+        }
+        #nav li {
+            padding : 15px 10px;
+            color: green;
+            font-weight: bold;
+            font-size: 20px;
+        }
+        #article {
+            float:left;
+            width: 85%;
+            height: 100%; 
+            background-color: gray;
+            position: relative;
+
+        }
+        #article > p {
+             padding: 200px 50px;
+        }
+        /* footer */
+        #footer {
+            clear:both;
+            width:100%;
+            background-color: #E1DEDE;
+            text-align: center;
+            padding:10px;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="header">
+        <div id="login">
+             <form method = "POST" action = "#">
+                <fieldset>
+                    <legend> 로그인 </legend>
+                    <table>
+                        <tr>
+                            <td>아이디</td>
+                            <td><input type="text" name = "id"></td>
+                        </tr>
+                        <tr>
+                            <td>패스워드</td>
+                            <td><input type="password" name = "pwd"></td>
+                        </tr>
+                        <tr>
+                            <td colspan="2">
+                                <input type="button" value = "확인">
+                                <input type="submit" value = "전달/제출">
+                                <input type = "reset" value = "깨끗하게취소">   
+                            </td>
+                        </tr>
+                    </table>
+                </fieldset>
+            </form>
+
+        </div>
+        <div id = "logo">
+            <img src = "https://iei.or.kr/resources/images/main/main_renewal/top_logo_s.jpg" height = "45px" width="190px">
+        </div>
+    </div>
+    <div id="section">
+        <div id="nav">
+            <ul>
+                <li>메뉴</li>
+                <li>공지사항</li>
+                <li>자유게시판</li>
+            </ul>
+        </div>
+        <div id="article">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        </div>
+    </div>
+    <div id="footer">
+        KH정보교육원 ｜ 사업자등록번호 : 851-87-00622 ｜ 서울 강남 제2014-01호 ｜ 대표자 : 양진선 ｜ 책임자 : 최홍석 ｜  개인정보관리책임자 : 양진선
+        <br>
+        <br>
+        종로지원 : 서울특별시 중구 남대문로 120 대일빌딩 2F, 3F
+        <br>
+        Copyright © 1998-2021 KH Information Educational Institute All Right Reserved
+    </div>
+</body>
+
+</html>
